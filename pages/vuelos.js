@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Container from "../components/Container";
-import fetch from "isomorphic-fetch";
+import fetch from 'isomorphic-unfetch'
 import Itinerary from "../components/Itinerary"
 
 const Vuelos = (props) => {
@@ -12,7 +12,7 @@ const Vuelos = (props) => {
   );
 };
 
-Vuelos.getInitialProps = async ctx => {
+Vuelos.getInitialProps = async ( context ) => {
   const res = await fetch('https://intranet.tiquetesytiquetes.com/testeos/r_controller.php?itinerarios=MO4737')
   const data = await res.json()
   return { 
