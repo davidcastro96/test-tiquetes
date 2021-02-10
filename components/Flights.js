@@ -1,11 +1,12 @@
 const Flights = (props) => {
   return (
-      {
-       props.flights.map( flights => (
+    <ul>
+      {props.flights.map((flight) => (
         <li>
-          <h5>{flights.codigo_reserva}</h5>
+          <h5>{flight.codigo_reserva}</h5>
         </li>
       ))}
+    </ul>
   );
 };
 
