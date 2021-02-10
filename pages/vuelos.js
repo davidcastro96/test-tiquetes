@@ -17,8 +17,8 @@ Vuelos.getInitialProps = async (ctx) => {
   const res = await fetch(
     "https://intranet.tiquetesytiquetes.com/testeos/r_controller.php?itinerarios=MO4737"
   );
-  const datos = await res.json();
-  return { flights: datos };
+  const dato = await res.json();
+  return { flights: dato };
 };
 
 export default Vuelos;
