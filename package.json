@@ -5,7 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "start:dev": "next start",
+    "start:prod": "nest start -p 80",
+    "export": "next build && nex export"
+
   },
   "dependencies": {
     "Babel": "^0.0.1",
