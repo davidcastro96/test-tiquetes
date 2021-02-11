@@ -1,10 +1,6 @@
-const Itinerary  = (props) => {
-    console.log(props)
-    return (
+const Itinerary = (props) => {
+  console.log(props);
+  return <h1>Itinerario</h1>;
+};
 
-            <h1>Itinerario</h1>
-        
-    )
-}
-
-export default Itinerary
+export default Itinerary;
