@@ -7,15 +7,17 @@ const Vuelos = (props) => {
   return (
     <Container>
       <h1>Estos son los siguientes vuelos</h1>
-      <Itinerarys users={props.users} />
+      <Itinerarys flights={props.flights} />
     </Container>
   );
 };
 
 Vuelos.getInitialProps = async (ctx) => {
-  const res = await fetch("https://reqres.in/api/users");
+  const res = await fetch(
+    "https://intranet.tiquetesytiquetes.com/testeos/r_controller.php?itinerarios=MO4737"
+  );
   const resJSON = await res.json();
-  return { users: resJSON.data };
+  return { flights: resJSON.respuesta };
 };
 
 export default Vuelos;
