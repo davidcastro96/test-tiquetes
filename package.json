@@ -10,7 +10,6 @@
   "dependencies": {
     "Babel": "^0.0.1",
     "isomorphic-fetch": "^3.0.0",
-    "isomorphic-unfetch": "^3.1.0",
     "next": "^10.0.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
