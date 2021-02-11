@@ -1,12 +1,30 @@
 const Itinerarys = (props) => {
   return (
-    <ul className="List-group pt-3">
+    <div className="container pt-3">
       {props.flights.map((flight) => (
-        <li className="list-group-item list-group-item-action">
-          <h5>{flight.codigo_reserva}</h5>
-        </li>
+        <div className="row row-cols-12">
+          <li className="list-group-item list-group-item-action">
+            <div className="row">
+              <div className="col">
+                <li>dsds</li>
+                <li>dsds</li>
+                <li>dsds</li>
+              </div>
+              <div className="col">
+                <li>dsds</li>
+                <li>dsds</li>
+                <li>dsds</li>
+              </div>
+              <div className="col">
+                <li>dsds</li>
+                <li>dsds</li>
+                <li>dsds</li>
+              </div>
+            </div>
+          </li>
+        </div>
       ))}
-    </ul>
+    </div>
   );
 };
 
