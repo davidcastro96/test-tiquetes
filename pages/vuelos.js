@@ -6,7 +6,7 @@ import Itinerarys from "../components/Itinerarys";
 const Vuelos = (props) => {
   return (
     <Container>
-      <h3>Estos son los siguientes vuelsos</h3>
+      <h3>Estos son los siguientes vuelos</h3>
       <Itinerarys flights={props.flights} />
     </Container>
   );
