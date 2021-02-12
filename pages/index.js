@@ -1,7 +1,5 @@
 import Head from "next/head";
 import Container from "../components/Container";
-import Vuelos from "./vuelos";
-import fetch from "isomorphic-fetch";
 
 const Index = () => {
   return (
